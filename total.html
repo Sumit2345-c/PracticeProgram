@@ -1,0 +1,22 @@
+<html>
+     <head>
+        <script>
+          function calculatorTotal()
+          {
+               var marks1 = parseInt(document.f1.marks1.value);
+               var marks2 = parseInt(document.f1.marks2.value);
+               var marks3 = parseInt(document.f1.marks3.value);
+               var total = marks1 + marks2 + marks3;
+               document.f1.total.value = total;
+          }
+        </script>
+     </head>
+     <body>
+         <form name="f1">
+             Enter Marks 1 : <input type="text" name="marks1"/><br>
+             Enter Marks 2 : <input type="text" name="marks1"/><br>
+             Enter Marks 3 : <input type="text" name="marks3"/><br>
+             Total Marks   : <input type="text" name="total"/><br>
+             <input type="button" value="Calculate Total" onclick="calculatorTotal()"/>
+     </body>
+</html>
